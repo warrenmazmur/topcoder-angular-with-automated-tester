@@ -1,5 +1,7 @@
 import { Component,OnInit } from '@angular/core';
-import { Treasure } from '../mock-treasures';
+import { treasureMock } from '../mock-treasures';
+import { Treasure } from '../treasure'   
+
 @Component({
     selector: 'app-treasure',
     templateUrl: './treasure.component.html',
@@ -7,11 +9,8 @@ import { Treasure } from '../mock-treasures';
 })
 
 export class TreasureComponent implements OnInit {
-    treasure: Treasure = {
-		id: 1,
-		name: 'Windstorm Gold Staff',
-		location: 'Tree behind home',
-	};
+    treasure:Treasure = treasureMock
+
     constructor() { }
   
     ngOnInit() {
