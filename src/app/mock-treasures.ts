@@ -1,13 +1,4 @@
-// export interface Treasure {
-//     id: 1,
-//     name: 'Windstorm Gold Staff',
-//     location: 'Tree behind home',
-// };
-export interface Treasure  {
-    id: number;
-    name: string;
-    location: string;
-}
+import { Treasure } from './treasure';
 
 export const TREASURES: Treasure[] = [
     { id: 1, name: 'Windstorm Gold Staff', location: 'Tree behind home' },
