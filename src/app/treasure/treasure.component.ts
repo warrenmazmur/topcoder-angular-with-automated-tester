@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { treasureMock } from '../mock-treasures';
+import { TREASURES } from '../mock-treasures';
 import { Treasure } from '../treasure'   
 
 @Component({
@@ -9,7 +9,7 @@ import { Treasure } from '../treasure'
 })
 
 export class TreasureComponent implements OnInit {
-    treasure:Treasure = treasureMock
+    treasures:Treasure[] = TREASURES
 
     constructor() { }
   
