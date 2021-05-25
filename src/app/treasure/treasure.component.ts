@@ -9,7 +9,7 @@ import { Treasure } from '../treasure'
 })
 
 export class TreasureComponent implements OnInit {
-    treasures = TREASURES
+    treasures:Treasure[] = TREASURES
 
     constructor() { }
   

@@ -7,7 +7,7 @@
   <hr class="divider">
 
   <div *ngIf="selectedTreasure">
-    <h2>{{selectedTreasure.name | uppercase}} Details</h2>
+    <h2>{{selectedTreasure.name}} Details</h2>
     <ul class="list-group">
       <li class="list-group-item">Id: {{selectedTreasure.id}}</li>
       <li class="list-group-item">
@@ -19,27 +19,3 @@
     </ul>
   </div>
 </div>
-
-
-
-
-
-
-
-<!-- <div id="treasure-details" class="container-fluid">
-  <h3>{{treasure.name}} Details</h3>
-  <ul class="list-group">
-      <li class="list-group-item">
-        <label for="treasure-id"><b>Id:</b></label>
-        <span id="treasure-id">{{treasure.id}}</span>
-      </li>
-      <li class="list-group-item">
-        <label for="treasure-name">Name:</label><br>
-        <input id="treasure-name" type="text" [(ngModel)]="treasure.name">
-      </li>
-      <li class="list-group-item">
-        <label for="treasure-location">Location:</label>
-        <span id="treasure-location">{{treasure.location}}</span>
-      </li>
-    </ul>
-</div> -->
