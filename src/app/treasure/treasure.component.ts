@@ -9,10 +9,15 @@ import { Treasure } from '../treasure'
 })
 
 export class TreasureComponent implements OnInit {
-    treasures:Treasure[] = TREASURES
+    treasures = TREASURES
 
     constructor() { }
   
     ngOnInit() {
+    }
+
+    selectedTreasure?: Treasure;
+    onSelect(treasure:Treasure): void{
+        this.selectedTreasure= treasure;
     }
 }
