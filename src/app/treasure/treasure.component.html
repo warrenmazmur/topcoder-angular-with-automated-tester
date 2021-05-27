@@ -1,19 +1,19 @@
 <div id="treasure-list" class="container-fluid">
   <h2>My Treasure</h2>
   <ul class="list-group">
-    <li class="list-group-item list-group-item-action" *ngFor="let treasure of treasures" [class.selected]="treasure === selectedTreasure" (click)="onSelect(treasure)">{{treasure.name}}</li>
+    <li class="list-group-item list-group-item-action" *ngFor="let treasure of treasures"
+      [class.selected]="treasure === selectedTreasure" (click)="onSelect(treasure)">{{treasure.name}}</li>
   </ul>
 
   <hr class="divider">
 
   <div *ngIf="selectedTreasure">
-    <h2>{{selectedTreasure.name}} Details</h2>
+    <h3>{{selectedTreasure.name}} Details</h3>
     <ul class="list-group">
       <li class="list-group-item">Id: {{selectedTreasure.id}}</li>
       <li class="list-group-item">
         <label for="treasure-name">Name:</label><br>
-        <input id="treasure-name" class="form-control" [(ngModel)]="selectedTreasure.name"
-        placeholder="name">
+        <input id="treasure-name" class="form-control" [(ngModel)]="selectedTreasure.name" placeholder="name">
       </li>
       <li class="list-group-item">Location: {{selectedTreasure.location}}</li>
     </ul>
