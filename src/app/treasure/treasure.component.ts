@@ -16,8 +16,8 @@ export class TreasureComponent implements OnInit {
     ngOnInit() {
     }
 
-    selectedTreasure?: Treasure;
-    onSelect(treasure:Treasure): void{
-        this.selectedTreasure= treasure;
+    treasure?: Treasure;
+    onSelect(t:Treasure): void{
+        this.treasure= t;
     }
 }
